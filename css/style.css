@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  height: 100vh;
+}
+
+.maven{
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.icons a{
+  color: black;
+}
+
+.home-card {
+  align-items: center;
+  background-color: #F0F1F3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:100px 50px 50px 50px;
+  padding: 50px;
+}
+
+.home-card:hover{
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 15px;
+  height: 180px;
+  width: 180px;
+}
+
+.nav-link:hover, .active {
+  background-color: violet !important;
+  color: black !important;
+}
+.navbar {
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+}
+
+.textarea {
+  height: 10rem;
+  padding: 1rem;
+}
+
+.form-input{
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.page-wrapper{
+  margin-top: 100px;
+}
+.contact-form {
+  display: flex;
+  flex-direction:  column;
+}
+
+.icons {
+  display: flex;
+  font-size: 30px;
+}
+.icons a {
+  padding: 5px;
+}
