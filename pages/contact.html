@@ -25,28 +25,54 @@
                         <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./about.html">About</a>
+                        <a class="nav-link text-white" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white active" href="pages/contact.html">Contacts</a>
+                        <a class="nav-link text-white active" href="contact.html">Contacts</a>
                     </li>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container page-wrapper">
-        <form method="GET" class="contact-form">
-            <span class="form-input">Name: </span><input type="text" name="firstname">
-            <span class="form-input">Last Name: </span><input type="text" name="lastname">
-            <span class="form-input">Birthday: </span><input type="date" name="birthday">
-            <span class="form-input">Email: </span><input type="email" name="email" required />
-            <span class="form-input">Password: </span><input type="password" name="password" minlength="5" />
-            <span class="form-input">Comment: </span><textarea class="comment" name="coment"></textarea>
-            <input class="form-input bottom" type="submit" value="Register">
-            <input class="form-input bottom" type="reset">
-        </form>
+    <div class="container page-wrapper main">
+        <h3 class="maven">Contact</h3>
+        <div class="form-wrapper">
+            <form action="https://formspree.io/f/mnqrnzdb" method="POST" class="contact-form">
+                <span class="input-label maven">Name: </span><input class="form-control" type="text" name="firstname"
+                    id="firstName" required onkeyup="formChange()" />
+                <span class="input-label maven">Last Name: </span><input class="form-control" type="text"
+                    name="lastname">
+                <span class="input-label maven">Birthday: </span><input class="form-control" id="birthday" type="date"
+                    name="birthday" required onkeyup="formChange()" />
+                <span class="input-label maven">Email: </span><input class="form-control" type="email" name="email"
+                    id="email" required onkeyup="formChange()" />
+                <span class="input-label maven">Password: </span><input class="form-control" type="password"
+                    name="password" minlength="5" id="password" required onkeyup="formChange()" />
+                <span class="input-label maven">Comment: </span><textarea class="comment form-control"
+                    name="coment"></textarea>
+                <input class="form-button maven green" type="submit" disabled value="Register" id="buttonRegister">
+                <input class="form-button maven red" type="reset">
+            </form>
+        </div>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <span id="footer-text"> This page was built using: </span>
+            <div>
+                <a class="footer-link maven" href="../index.html">Home</a>
+                <a class="footer-link maven" href="about.html">About</a>
+                <a class="footer-link maven" href="contact.html">Contacts</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/footer.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

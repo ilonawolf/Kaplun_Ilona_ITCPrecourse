@@ -7,11 +7,11 @@ body {
   height: 100vh;
 }
 
-.maven{
+.maven {
   font-family: 'Maven Pro', sans-serif;
 }
 
-.icons a{
+.icons a {
   color: black;
 }
 
@@ -22,13 +22,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:100px 50px 50px 50px;
+  margin: 100px 50px 50px 50px;
   padding: 50px;
 }
 
-.home-card:hover{
+.home-card:hover {
   animation: bounce;
   animation-duration: 2s;
+}
+.noHover{
+  pointer-events: none;
 }
 
 .nav-item {
@@ -49,13 +52,10 @@ body {
   width: 180px;
 }
 
-.nav-link:hover, .active {
+.nav-link:hover,
+.active {
   background-color: violet !important;
   color: black !important;
-}
-.navbar {
-  width: 100%;
-  margin: 0px 0px 30px 0px;
 }
 
 .textarea {
@@ -63,23 +63,106 @@ body {
   padding: 1rem;
 }
 
-.form-input{
+.input-label {
   font-weight: bold;
   margin-top: 5px;
 }
 
-.page-wrapper{
+.page-wrapper {
   margin-top: 100px;
 }
+
 .contact-form {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
 }
 
 .icons {
   display: flex;
   font-size: 30px;
 }
+
 .icons a {
   padding: 5px;
 }
+
+.icons a:hover {
+  transition: all 3s;
+  color: purple;
+}
+
+.form-wrapper {
+  background-color: #F0F1F3;
+  padding: 50px;
+  border: dashed black;
+  border-radius: 50px;
+}
+
+.form-button {
+  margin-top: 15px;
+  border-radius: 20px;
+}
+
+.green {
+  background-color: #90EE90;
+}
+
+.red {
+  background-color: #FA8072;
+}
+
+.about {
+  margin-top: 100px;
+}
+
+.home-card-on-click-animation {
+  animation: swing;
+  animation-duration: 2s;
+}
+
+.footer-container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  color: yellow;
+  background-color: #3d6ded;
+  justify-content: space-between;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-link {
+  color: #F0F1F3;
+  padding-right: 5px;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+.map-buttons {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.prev {
+  color: brown;
+  background-color: azure;
+  border: inset;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+.next {
+ color: #3d6ded;
+ background-color: azure;
+ border: inset;
+ border-radius: 10px;
+ padding: 10px;
+}
+
+

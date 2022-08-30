@@ -8,3 +8,13 @@ fetch(GITHUB_URL)
     document.getElementById("profile-image").src = data.avatar_url;
     document.getElementById("profile-name").innerText = data.name;
   });
+
+function cardOnClick(){
+  const element = document.getElementById('card');
+  element.classList.add('noHover');
+  element.classList.add('home-card-on-click-animation');
+  setTimeout(() => {
+    element.classList.remove('home-card-on-click-animation');
+    element.classList.remove('noHover');
+  }, 3000);
+}
