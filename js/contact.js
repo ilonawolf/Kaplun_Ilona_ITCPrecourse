@@ -1,3 +1,8 @@
+document.getElementById("firstName").addEventListener("keyup", formChange);
+document.getElementById("birthday").addEventListener("keyup", formChange);
+document.getElementById("email").addEventListener("keyup", formChange);
+document.getElementById("password").addEventListener("keyup", formChange);
+
 function formChange() {
     const firstName = document.getElementById("firstName").value;
     const birthday = document.getElementById("birthday").value;

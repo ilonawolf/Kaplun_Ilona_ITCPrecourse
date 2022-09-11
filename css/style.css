@@ -30,7 +30,8 @@ body {
   animation: bounce;
   animation-duration: 2s;
 }
-.noHover{
+
+.noHover {
   pointer-events: none;
 }
 
@@ -120,7 +121,7 @@ body {
   animation-duration: 2s;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -140,6 +141,7 @@ body {
 .main {
   margin-bottom: 30px;
 }
+
 .map-buttons {
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -154,15 +156,17 @@ body {
   border: inset;
   border-radius: 10px;
   padding: 10px;
-  
+
 }
 
 .next {
- color: #3d6ded;
- background-color: azure;
- border: inset;
- border-radius: 10px;
- padding: 10px;
+  color: #3d6ded;
+  background-color: azure;
+  border: inset;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-
+.button-disable {
+  opacity: 0.5;
+}

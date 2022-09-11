@@ -11,22 +11,31 @@ document.getElementById('map').src = maps[0];
 
 let index = 0;
 
+document.getElementById("prevButton").addEventListener("click", prevOnClick);
+document.getElementById("nextButton").addEventListener("click", nextOnClick);
+
 function prevOnClick() {
-    document.getElementById("nextButton").disabled = false;
+    const nextButton = document.getElementById('nextButton');
+    nextButton.disabled = false;
+    nextButton.classList.remove('button-disable');
     index--;
     document.getElementById('map').src = maps[index];
     if (index == 0) {
-        document.getElementById("prevButton").disabled = true;
+        const prevButton = document.getElementById('prevButton');
+        prevButton.disabled = true;
+        prevButton.classList.add('button-disable');
     }
-
-
-
 }
+
 function nextOnClick() {
-    document.getElementById("prevButton").disabled = false;
+    const prevButton = document.getElementById('prevButton');
+    prevButton.disabled = false;
+    prevButton.classList.remove('button-disable');
     index++;
     document.getElementById('map').src = maps[index];
     if (index == maps.length - 1) {
-        document.getElementById("nextButton").disabled = true;
+        const nextButton = document.getElementById('nextButton');
+        nextButton.disabled = true;
+        nextButton.classList.add('button-disable');
     }
 }
